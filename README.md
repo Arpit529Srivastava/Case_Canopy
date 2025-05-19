@@ -51,17 +51,20 @@ CaseCanopy is an AI-powered legal platform that bridges the justice gap by enabl
 
 ## Setup Instructions
 
-### agentic-ai
+#### 1. Clone the repository:
 ```bash
-cd agentic-ai
-python3.10 -m venv legal_venv
-source legal_venv/bin/activate
-pip install -r requirements.txt
-# Add your OpenAI API key to .env
-uvicorn main:app --reload --port 8001
+git clone https://github.com/Arpit529Srivastava/Case_Canopy.git
+cd Case_Canopy
 ```
 
-### backend
+### 2. Set up the AI Agent:
+```bash
+cd ai_agent
+   # Follow instructions in ai_agent/README.md
+```
+
+
+### 3. Set up the Backend:
 ```bash
 cd backend
 go mod tidy
@@ -69,7 +72,7 @@ go run main.go
 # Server runs on :8000, requires MongoDB running locally
 ```
 
-### frontend
+### 4. Set up the Frontend:
 ```bash
 cd frontend
 npm install
@@ -77,15 +80,19 @@ npm run dev
 # App runs on http://localhost:3000
 ```
 
-### RAG
+### 5. Set up the RAG:
 ```bash
 cd RAG
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-# Add your OpenAI API key to .env
 python app.py
 # Server runs on http://localhost:8000
+
+# in other terminal tab run:
+source venv/bin/activate
+pip install -r requirements.txt
+python analyzer.py
 ```
 
 ## Environment Variables
