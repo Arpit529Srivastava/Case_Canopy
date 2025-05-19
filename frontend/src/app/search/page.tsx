@@ -178,6 +178,8 @@ export default function SearchPage() {
           message: "Document parsed successfully",
           type: "success",
         });
+        // Redirect to upload/response page
+        router.push("/upload/response");
       } else {
         setToast({
           message: data.error || "Failed to parse document",
