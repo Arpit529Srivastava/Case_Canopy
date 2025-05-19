@@ -157,10 +157,10 @@ export default function AdminDashboard() {
           <div className="flex flex-col items-center mb-8">
             <div className="flex items-center justify-between w-full mb-4">
               <div className="flex items-center space-x-3">
-                <span className="text-white text-2xl">🛡️</span>
-                <span className="text-white text-2xl font-semibold tracking-wide">
-                  CaseCanopy
-                </span>
+              <span className="text-white text-2xl">🛡️</span>
+              <span className="text-white text-2xl font-semibold tracking-wide">
+                CaseCanopy
+              </span>
               </div>
               <button
                 onClick={handleLogout}

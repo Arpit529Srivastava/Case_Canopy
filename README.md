@@ -96,30 +96,35 @@ python analyzer.py
 ```
 
 ## Environment Variables
-- **agentic-ai/.env** and **RAG/.env** require:
-  ```
-  OPENAI_API_KEY=your_openai_api_key_here
-  ```
-- **backend** expects MongoDB at `mongodb://localhost:27017`.
 
-## Example API Usage
-- **Generate Legal Document (agentic-ai):**
-  ```
-  POST /generate_document
-  {
-    "user_input": "Describe your legal issue...",
-    "user_name": "John Doe",
-    "location": "City, State",
-    "contact_number": "1234567890",
-    "language": "en"
-  }
-  ```
-- **Search Case Law (frontend/backend):**
-  - Use the frontend search interface, which interacts with backend and RAG services.
+### 1. agentic-ai/.env
+```
+OPENAI_API_KEY=your_openai_api_key_here
+```
 
-## Contribution
-- Fork the repo, create a feature branch, and submit a pull request.
-- Ensure code is well-documented and tested.
+### 2. RAG/.env
+```
+OPENAI_API_KEY=your_openai_api_key_here
+MODEL_NAME=gpt-4o-mini 
+QDRANT_URL=your_link
+QDRANT_API_KEY=your_qdrant_api_key_here
+```
+
+### 3. backend/.env
+```
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=your_email
+SMTP_PASS=generate_password_and paste_here
+JWT_SECRET=your_token
+GEMINI_API_KEY=your_api_key
+```
+
+### 4. frontend/.env.local
+```
+MONGODB_URI=you_uri
+JWT_SECRET=secret_token
+```
 
 ## License
-- See `frontend/LICENSE` for details.
+- This project is licensed under the MIT License.
