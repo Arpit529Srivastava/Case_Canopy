@@ -18,35 +18,6 @@ CaseCanopy is an AI-powered legal platform that bridges the justice gap by enabl
 - **Modern, responsive frontend UI**
 
 
-### 1. agentic-ai (Python/FastAPI)
-- Generates legal documents (PDFs) from user input or backend data.
-- Uses OpenAI and LangChain for document creation.
-- Endpoints:
-  - `/generate_document` (POST): Generate a document from user input.
-  - `/generate_from_backend` (GET): Generate a document from backend API data.
-- Dependencies: FastAPI, LangChain, OpenAI, ReportLab, Jinja2, etc.
-
-### 2. backend (Go/Gin)
-- Handles user management, file uploads, admin approval, and document parsing.
-- Connects to MongoDB.
-- Key routes:
-  - `/api/upload`, `/api/transcribe`, `/api/signup-legal`, `/api/signin`
-  - `/api/users`, `/api/users/:id`
-  - `/api/admin/login`, `/api/admin/users/legal`, `/api/admin/users/legal/approve`
-  - `/api/submit` (searches)
-- Modular structure: controllers, services, middleware, models.
-
-### 3. frontend (Next.js/React)
-- User authentication, dashboard, search, upload, and results pages.
-- Features animated landing page, guided tour, and modern UI.
-- Uses Tailwind CSS, Framer Motion, and other modern libraries.
-
-### 4. RAG (Python/Flask)
-- LangChain-based retrieval-augmented generation for legal queries.
-- Endpoints:
-  - `/api/plain-text` (GET): Query the LangChain model.
-  - `/api/saved-query` (GET): Retrieve the last saved query.
-- Dependencies: Flask, LangChain, OpenAI, Qdrant, etc.
 
 ## Setup Instructions
 
