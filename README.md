@@ -17,7 +17,6 @@ CaseCanopy is an AI-powered legal platform that bridges the justice gap by enabl
 - **Document upload, management, and PDF generation**
 - **Modern, responsive frontend UI**
 
-## Services Overview
 
 ### 1. agentic-ai (Python/FastAPI)
 - Generates legal documents (PDFs) from user input or backend data.
