@@ -96,5 +96,8 @@ MONGODB_URI=you_uri
 JWT_SECRET=secret_token
 ```
 
+## Demo
+[Demo](https://www.youtube.com/watch?v=CbTfhmReSbM&ab_channel=ARPITSRIVASTAVA)
+
 ## License
 - This project is licensed under the MIT License.
